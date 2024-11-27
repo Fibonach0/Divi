@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/Assets/Divi.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Header */
+h1 {
+    color: #fff;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Video Grid */
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    width: 50%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5); /* Subtle background for contrast */
+    border-radius: 8px;
+}
+
+/* Individual Video */
+.video {
+    overflow: hidden;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Responsive Background */
+@media screen and (max-width: 1080px) {
+    body {
+        background: url(/Assets/Divi-2.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+}
